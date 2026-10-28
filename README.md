@@ -133,22 +133,6 @@ How they were treated:
 
 ---
 
-## 📊 Some Charts
-
-### 🛍️ Top 10 Categories by Sales
-![Top Categories](reports/top_categories.png)
-
-### 📈 Monthly and Cumulative Sales
-![Sales Growth](reports/sales_growth.png)
-
-### 🗓️ Orders per Month (2017 vs 2018)
-![Orders per Month](reports/orders_per_month.png)
-
-### 🏙️ Customers by State
-![Customers by State](reports/customers_by_state.png)
-
----
-
 ## 💡 Key Insights
 
 1. 🏙️ About 42% of customers live in one state (SP), so it is the biggest market
