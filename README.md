@@ -228,6 +228,3 @@ How they were treated:
 
 This project turns raw e-commerce data with missing values into clean data and simple insights using only Python. It shows which categories earn the most, how customers pay, how fast orders arrive and how sales grow, which can help sellers and online shops make better decisions. 🛒
 
----
-
-⭐ If you like this project, give it a star!
