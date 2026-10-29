@@ -146,23 +146,6 @@ How they were treated:
 
 > 📓 The notebook answers 12 questions in total, including top sellers, top customers and the correlation heatmap.
 
----
-
-## 📊 Some Charts
-
-### 🛍️ Top 10 Categories by Sales
-![Top Categories](reports/top_categories.png)
-
-### 📈 Monthly and Cumulative Sales
-![Sales Growth](reports/sales_growth.png)
-
-### 🗓️ Orders per Month (2017 vs 2018)
-![Orders per Month](reports/orders_per_month.png)
-
-### 🏙️ Customers by State
-![Customers by State](reports/customers_by_state.png)
-
----
 
 ## 💡 Key Insights
 
@@ -243,6 +226,3 @@ How they were treated:
 
 This project turns raw e-commerce data with missing values into clean data and simple insights using only Python. It shows which categories earn the most, how customers pay, how fast orders arrive and how sales grow, which can help sellers and online shops make better decisions. 🛒
 
----
-
-⭐ If you like this project, give it a star!
