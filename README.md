@@ -132,40 +132,6 @@ The notebook answers 12 questions in total, including top sellers and top custom
 
 ---
 
-## Visualizations and Conclusions
-
-### 1. Top 10 Categories by Sales
-
-![Top Categories](reports/top_categories.png)
-
-**Conclusion:** Health and Beauty (9.3%), Watches and Gifts (8.9%) and Bed, Table and Bath (7.7%) are the top 3 categories. Sport and Leisure and Computer Accessories come next. Sales are spread over many categories, but no single category dominates.
-
-### 2. Orders per Month (2017 vs 2018)
-
-![Orders per Month](reports/orders_per_month.png)
-
-**Conclusion:** November 2017 is the busiest month with about 7,500 orders, which is the shopping season. Orders in 2018 stay at a high level from January to August.
-
-### 3. Customers by State
-
-![Customers by State](reports/customers_by_state.png)
-
-**Conclusion:** SP has the most customers (about 42%), followed by RJ (about 13%) and MG (about 12%). Almost half of the customers live in one state, so SP is the most important market.
-
-### 4. Payment Types
-
-![Payment Types](reports/payment_types.png)
-
-**Conclusion:** Credit card is the most used payment type (about 74% of payments), followed by UPI (about 19%). Customers prefer cards, and about half of all payments are split into installments.
-
-### 5. Delivery Time
-
-![Delivery Days](reports/delivery_days.png)
-
-**Conclusion:** Most orders reach the customer in about 2 weeks or less. The average is about 12 days and the median is 10 days. A few orders take much longer.
-
----
-
 ## Key Insights
 
 1. About 42% of customers live in one state (SP), so it is the biggest market
