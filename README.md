@@ -140,9 +140,6 @@ The notebook answers 12 questions in total, including top sellers and top custom
 
 **Conclusion:** Health and Beauty (9.3%), Watches and Gifts (8.9%) and Bed, Table and Bath (7.7%) are the top 3 categories. Sport and Leisure and Computer Accessories come next. Sales are spread over many categories, but no single category dominates.
 
-### 2. Orders per Month (2017 vs 2018)
-
-![Orders per Month](Reports/orders_per_month (1).png)
 
 **Conclusion:** November 2017 is the busiest month with about 7,500 orders, which is the shopping season. Orders in 2018 stay at a high level from January to August.
 
