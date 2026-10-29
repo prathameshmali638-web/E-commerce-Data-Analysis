@@ -1,0 +1,12 @@
+column,orders_before,products_before,orders_after,products_after
+order_approved_at,160,0,0,0
+order_delivered_carrier_date,1783,0,1783,0
+order_delivered_customer_date,2965,0,2965,0
+product_category,0,610,0,0
+product_description_length,0,610,0,0
+product_height_cm,0,2,0,0
+product_length_cm,0,2,0,0
+product_name_length,0,610,0,0
+product_photos_qty,0,610,0,0
+product_weight_g,0,2,0,0
+product_width_cm,0,2,0,0
