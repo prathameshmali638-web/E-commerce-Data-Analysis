@@ -142,7 +142,7 @@ The notebook answers 12 questions in total, including top sellers and top custom
 
 ### 2. Orders per Month (2017 vs 2018)
 
-![Orders per Month](reports/orders_per_month.png)
+![Orders per Month](Reports/orders_per_month (1).png)
 
 **Conclusion:** November 2017 is the busiest month with about 7,500 orders, which is the shopping season. Orders in 2018 stay at a high level from January to August.
 
