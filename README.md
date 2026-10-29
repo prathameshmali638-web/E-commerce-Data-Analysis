@@ -136,7 +136,7 @@ The notebook answers 12 questions in total, including top sellers and top custom
 
 ### 1. Top 10 Categories by Sales
 
-![Top Categories](reports/top_categories.png)
+![top categories](reports/top_categories.png)
 
 **Conclusion:** Health and Beauty (9.3%), Watches and Gifts (8.9%) and Bed, Table and Bath (7.7%) are the top 3 categories. Sport and Leisure and Computer Accessories come next. Sales are spread over many categories, but no single category dominates.
 
