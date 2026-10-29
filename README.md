@@ -117,19 +117,50 @@ How they were treated:
 
 ## 🔍 Questions & Answers
 
-| ❓ Question | ✅ Answer |
-|---|---|
-| How many orders were placed in 2017 and 2018? | 45,101 in 2017 and 54,011 in 2018 |
-| Which state has the most customers? | SP, with about 42% of all customers |
-| Which product category earns the most? | Health & Beauty (about 9.3% of sales) |
-| What are the other top categories? | Watches & Gifts (8.9%) and Bed, Table & Bath (7.7%) |
-| How many payments are in installments? | About 49% |
-| Does a higher price mean more purchases? | No, there is only a slight negative link (-0.11) |
-| How did sales grow? | Jan-Aug 2018 sales were about 138% higher than Jan-Aug 2017 |
-| How fast are orders delivered? | About 12 days on average (10 days median) |
-| How many customers buy again? | Only about 3% |
+❓ **How many orders were placed in 2017 and 2018?**  
+✅ 45,101 in 2017 and 54,011 in 2018
+
+❓ **Which state has the most customers?**  
+✅ SP, with about 42% of all customers
+
+❓ **Which product category earns the most?**  
+✅ Health & Beauty (about 9.3% of sales)
+
+❓ **What are the other top categories?**  
+✅ Watches & Gifts (8.9%) and Bed, Table & Bath (7.7%)
+
+❓ **How many payments are in installments?**  
+✅ About 49%
+
+❓ **Does a higher price mean more purchases?**  
+✅ No, there is only a slight negative link (-0.11)
+
+❓ **How did sales grow?**  
+✅ Jan-Aug 2018 sales were about 138% higher than Jan-Aug 2017
+
+❓ **How fast are orders delivered?**  
+✅ About 12 days on average (10 days median)
+
+❓ **How many customers buy again?**  
+✅ Only about 3%
 
 > 📓 The notebook answers 12 questions in total, including top sellers, top customers and the correlation heatmap.
+
+---
+
+## 📊 Some Charts
+
+### 🛍️ Top 10 Categories by Sales
+![Top Categories](reports/top_categories.png)
+
+### 📈 Monthly and Cumulative Sales
+![Sales Growth](reports/sales_growth.png)
+
+### 🗓️ Orders per Month (2017 vs 2018)
+![Orders per Month](reports/orders_per_month.png)
+
+### 🏙️ Customers by State
+![Customers by State](reports/customers_by_state.png)
 
 ---
 
@@ -212,3 +243,6 @@ How they were treated:
 
 This project turns raw e-commerce data with missing values into clean data and simple insights using only Python. It shows which categories earn the most, how customers pay, how fast orders arrive and how sales grow, which can help sellers and online shops make better decisions. 🛒
 
+---
+
+⭐ If you like this project, give it a star!
