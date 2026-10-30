@@ -1,200 +1,162 @@
-# E-commerce Data Analysis
+<h1 align="center">🛒 E-commerce Data Analysis</h1>
 
-A Python-based exploratory data analysis project focused on understanding online shopping data, identifying customer and sales patterns, and transforming raw e-commerce records into actionable insights.
+<p align="center">
+  A Python-based exploratory data analysis project focused on understanding online shopping data,
+  identifying customer and sales patterns, and transforming raw e-commerce records into actionable insights.
+</p>
 
-**Tools:** Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook
-
----
-
-## Project Overview
-
-Online shops collect a lot of data every day: who is buying, what they are buying, how they pay and how fast the orders reach the customer. This project studies an e-commerce dataset to answer one simple question:
-
-**How are customers, sales and products performing?**
-
-The data is spread across 6 files and has missing values, just like real life. The project follows these steps: load, clean, fix missing values, explore and find insights, using only basic Python tools.
-
----
-
-## Project Objectives
-
-- Clean the raw e-commerce data
-- Fix the missing values
-- Explore the data using simple charts
-- Find what drives customers and sales
-- Share insights that anyone can understand
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white" />
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat" />
+  <img src="https://img.shields.io/badge/Seaborn-4C72B0?style=flat" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white" />
+</p>
 
 ---
 
-## Skills and Tools Used
+## 📖 About the project
 
-**Tools**
+Every online order leaves a trail of data behind it: who bought, what they bought, how they paid and how long the package took to arrive. I wanted to see what that trail says about the business, so I took a real e-commerce dataset (about 99,000 orders from 3,000+ sellers) and went through it step by step in Jupyter Notebook.
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+The main question I tried to answer was simple:
 
-**Skills**
+> **How are the customers, sales and products actually performing?**
 
-- Data Cleaning and Preprocessing
-- Missing Value Treatment
-- Exploratory Data Analysis (EDA)
-- Data Visualization
-- Business Analytics
+The data came in 6 separate CSV files and had a fair number of missing values, so a good part of the work was cleaning it before any analysis could start.
 
 ---
 
-## Dataset Information
+## 🗂️ Dataset
 
-The original data is kept inside the `Data` folder as 6 CSV files (each file is under 25 MB):
+The raw files are in the `Data` folder (each one is under 25 MB).
 
-- **customers** - customer city and state
-- **orders** - order dates and status
-- **order_items** - products in each order, price and freight
-- **products** - product category and details
-- **sellers** - seller information
-- **payments** - payment type, value and installments
+| File | What it contains |
+|---|---|
+| `customers.csv` | Customer city and state |
+| `orders.csv` | Order dates and status |
+| `order_items.csv` | Products in each order, price and freight |
+| `products.csv` | Product category and size details |
+| `sellers.csv` | Seller information |
+| `payments.csv` | Payment type, value and installments |
 
 ---
 
-## Project Workflow
+## 🧹 What I did
 
-**1. Load and understand the data**
-- Read all 6 files using Pandas
-- Checked the shape, data types and missing values
+**1. Loaded and checked the data.** Read all 6 files with Pandas and looked at the shapes, data types and missing values.
 
-**2. Clean the data**
-- Fixed a column name (`product category` to `product_category`)
-- Made category names clean and in the same format
-- Changed date columns to proper date format
-- Checked every table for duplicate rows (none found)
+**2. Cleaned it up.** Renamed a column that had a space in it, made the category names consistent, converted the date columns to proper dates and checked for duplicate rows (there were none).
 
-**3. Fix missing values**
-
-Missing values were found in two tables:
-
-- orders: 4,908 missing values (approval and delivery dates)
-- products: 2,448 missing values (category, size, weight, description)
-
-How they were treated:
+**3. Dealt with the missing values.** Two tables had them: `orders` (4,908 missing values) and `products` (2,448). I handled each one differently depending on what it was:
 
 - Product category: filled with `"unknown"`
-- Product numbers (weight, size, photos): filled with the median
-- Approval date: filled with the purchase date
-- Delivery dates: kept empty on purpose, because those orders were cancelled or not delivered yet. A new `is_delivered` column was added instead
+- Product weight, size and photo count: filled with the median, since it is not thrown off by extreme values
+- Order approval date: filled with the purchase date
+- Delivery dates: left empty on purpose. Those orders were cancelled or never delivered, so any date I filled in would have been made up. I added an `is_delivered` column instead
 
-**4. Join the tables**
-- Joined orders, items, products and customers into one `sales` table
-- Removed cancelled and unavailable orders from the sales analysis
+**4. Joined the tables.** Combined orders, items, products and customers into one `sales` table and removed cancelled and unavailable orders.
 
-**5. Explore with charts**
-- Bar charts, line charts and a histogram
+**5. Explored it with charts.** Bar charts, line charts and a histogram to answer 12 questions about the business.
 
-**6. Save cleaned data and reports**
-- Saved the cleaned `orders` and `products` tables in the `Data` folder (files ending with `_cleaned`)
-- Saved the main results in a separate `Reports` folder (5 CSV files), and the charts in the `Images` folder
+**6. Saved the results.** Cleaned tables went to the `Data` folder, summary files to `Reports` and the charts to `Images`.
 
 ---
 
-## Questions and Answers
+## ❓ Questions I answered
 
-**Q: How many orders were placed in 2017 and 2018?**
-A: 45,101 in 2017 and 54,011 in 2018.
+**How many orders were placed in 2017 and 2018?**
+45,101 in 2017 and 54,011 in 2018.
 
-**Q: Which state has the most customers?**
-A: SP, with about 42% of all customers.
+**Which state has the most customers?**
+SP, with about 42% of all customers.
 
-**Q: Which product category earns the most?**
-A: Health and Beauty (about 9.3% of sales).
+**Which product category earns the most?**
+Health & Beauty, with about 9.3% of total sales. Watches & Gifts (8.9%) and Bed, Table & Bath (7.7%) follow.
 
-**Q: What are the other top categories?**
-A: Watches and Gifts (8.9%) and Bed, Table and Bath (7.7%).
+**How many payments are split into installments?**
+About 49%.
 
-**Q: How many payments are in installments?**
-A: About 49%.
+**Does a higher price mean more purchases?**
+Not really. The link is slightly negative (-0.11).
 
-**Q: Does a higher price mean more purchases?**
-A: No, there is only a slight negative link (-0.11).
+**How much did sales grow?**
+Sales from January to August 2018 were about 138% higher than the same months in 2017.
 
-**Q: How did sales grow?**
-A: Jan-Aug 2018 sales were about 138% higher than Jan-Aug 2017.
+**How long does delivery take?**
+About 12 days on average, with a median of 10.
 
-**Q: How fast are orders delivered?**
-A: About 12 days on average (10 days median).
+**How many customers come back to buy again?**
+Only about 3%.
 
-**Q: How many customers buy again?**
-A: Only about 3%.
-
-The notebook answers 12 questions in total, including top sellers and top customers.
+The notebook covers 12 questions in total, including the top sellers and top customers.
 
 ---
 
-## Visualizations and Conclusions
+## 📊 Charts and what they show
 
-### 1. Top 10 Categories by Sales
+### Top 10 categories by sales
 
 ![Top Categories](Images/top_categories.png)
 
-**Conclusion:** Health and Beauty (9.3%), Watches and Gifts (8.9%) and Bed, Table and Bath (7.7%) are the top 3 categories. Sport and Leisure and Computer Accessories come next. Sales are spread over many categories, but no single category dominates.
+Health & Beauty, Watches & Gifts and Bed, Table & Bath lead the list, with Sport & Leisure and Computer Accessories right behind them. No single category dominates, sales are spread across many of them.
 
-### 2. Orders per Month (2017 vs 2018)
+### Orders per month, 2017 vs 2018
 
 ![Orders per Month](Images/orders_per_month.png)
 
-**Conclusion:** November 2017 is the busiest month with about 7,500 orders, which is the shopping season. Orders in 2018 stay at a high level from January to August.
+November 2017 was the busiest month with roughly 7,500 orders, which fits the shopping season. Through 2018 the order count stayed high from January to August.
 
-### 3. Customers by State
+### Customers by state
 
 ![Customers by State](Images/customers_by_state.png)
 
-**Conclusion:** SP has the most customers (about 42%), followed by RJ (about 13%) and MG (about 12%). Almost half of the customers live in one state, so SP is the most important market.
+SP is far ahead with about 42% of customers, followed by RJ (about 13%) and MG (about 12%). Nearly half the customer base sits in one state, which makes SP the market that matters most.
 
-### 4. Payment Types
+### Payment types
 
 ![Payment Types](Images/payment_types.png)
 
-**Conclusion:** Credit card is the most used payment type (about 74% of payments), followed by UPI (about 19%). Customers prefer cards, and about half of all payments are split into installments.
+Credit card is the clear favourite at about 74% of payments, then UPI at about 19%. Along with that, roughly half of all payments are split into installments.
 
-### 5. Delivery Time
+### Delivery time
 
 ![Delivery Days](Images/delivery_days.png)
 
-**Conclusion:** Most orders reach the customer in about 2 weeks or less. The average is about 12 days and the median is 10 days. A few orders take much longer.
+Most orders arrive within about two weeks. The average is 12 days and the median is 10, with a small number of orders taking much longer and pulling the average up.
 
 ---
 
-## Key Insights
+## 💡 Main takeaways
 
-1. About 42% of customers live in one state (SP), so it is the biggest market
-2. Health and Beauty, Watches and Gifts and Bed/Table/Bath are the top 3 categories
-3. Credit card is the most used payment type, and about half of the payments are in installments
-4. Price alone does not decide how often a product is bought
-5. Sales grew strongly from 2017 to 2018
-6. Only about 3% of customers buy more than once
-
----
-
-## Business Recommendations
-
-- **Sellers:** Focus on the top categories like health, beauty and gifts
-- **Shops:** Keep the installment options, customers use them a lot
-- **Marketing:** Use offers and reminders to bring customers back for a second order
-- **Business:** Give extra attention to the SP state, it has the most customers
+1. About 42% of customers live in a single state (SP), so it is the biggest market.
+2. Health & Beauty, Watches & Gifts and Bed, Table & Bath bring in the most sales.
+3. Customers mostly pay by credit card, and about half of the payments use installments.
+4. Price alone does not decide how often a product gets bought.
+5. Sales grew strongly from 2017 to 2018.
+6. Only about 3% of customers place a second order.
 
 ---
 
-## Limitations
+## 🚀 What the business could do with this
 
-- Only basic analysis, no prediction model
-- Data for 2016 and after August 2018 is very small, so those months are left out of the monthly charts
-- Prices are not adjusted for inflation
+- Put more focus on the top categories like health, beauty and gifts.
+- Keep the installment options, customers clearly use them.
+- Bring customers back with offers or reminders, since so few order twice.
+- Give extra attention to the SP region, where most customers are.
 
 ---
 
-## Files in this Project
+## ⚠️ Limitations
+
+- This is a basic analysis and there is no prediction model.
+- Data for 2016 and after August 2018 is very small, so I left those months out of the monthly charts.
+- Prices are not adjusted for inflation.
+
+---
+
+## 📁 Project structure
 
 ```
 E-commerce-Data-Analysis
@@ -225,24 +187,21 @@ E-commerce-Data-Analysis
 
 ---
 
-## How to Run
+## ▶️ Running it yourself
 
-1. Clone the project and install the libraries
-   ```bash
-   git clone https://github.com/your-username/E-commerce-Data-Analysis.git
-   cd E-commerce-Data-Analysis
-   pip install pandas numpy matplotlib seaborn jupyter
-   ```
-2. Open the notebook
-   ```bash
-   jupyter notebook Ecommerce_Data_Analysis.ipynb
-   ```
-3. Click Kernel, then Restart and Run All
+```bash
+git clone https://github.com/your-username/E-commerce-Data-Analysis.git
+cd E-commerce-Data-Analysis
+pip install pandas numpy matplotlib seaborn jupyter
+jupyter notebook Ecommerce_Data_Analysis.ipynb
+```
 
-No need to unzip anything or install any database, just run the notebook.
+Then pick **Kernel → Restart & Run All**. There is nothing to unzip and no database to set up.
 
 ---
 
-## Conclusion
+## 🧾 Wrapping up
 
-This project turns raw e-commerce data with missing values into clean data and simple insights using only Python. It shows which categories earn the most, how customers pay, how fast orders arrive and how sales grow, which can help sellers and online shops make better decisions.
+Working through this dataset showed how much of the job is cleaning, not charting. Once the missing values were sorted out, the answers came quickly: which categories earn the most, how people pay, how fast orders arrive and how sales grew from one year to the next.
+
+If you found this useful, a ⭐ on the repo is always appreciated.
