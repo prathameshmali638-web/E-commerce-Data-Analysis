@@ -212,4 +212,3 @@ Then pick **Kernel → Restart & Run All**. There is nothing to unzip and no dat
 
 Working through this dataset showed how much of the job is cleaning, not charting. Once the missing values were sorted out, the answers came quickly: which categories earn the most, how people pay, how fast orders arrive and how sales grew from one year to the next.
 
-If you found this useful, a ⭐ on the repo is always appreciated.
