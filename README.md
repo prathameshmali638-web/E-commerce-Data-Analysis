@@ -66,29 +66,37 @@ The raw files are in the `Data` folder (each one is under 25 MB).
 
 ## ❓ Questions I answered
 
-**How many orders were placed in 2017 and 2018?**
-45,101 in 2017 and 54,011 in 2018.
+**Q1. How many orders were placed in 2017 and 2018?**
 
-**Which state has the most customers?**
-SP, with about 42% of all customers.
+➡️ 45,101 in 2017 and 54,011 in 2018.
 
-**Which product category earns the most?**
-Health & Beauty, with about 9.3% of total sales. Watches & Gifts (8.9%) and Bed, Table & Bath (7.7%) follow.
+**Q2. Which state has the most customers?**
 
-**How many payments are split into installments?**
-About 49%.
+➡️ SP, with about 42% of all customers.
 
-**Does a higher price mean more purchases?**
-Not really. The link is slightly negative (-0.11).
+**Q3. Which product category earns the most?**
 
-**How much did sales grow?**
-Sales from January to August 2018 were about 138% higher than the same months in 2017.
+➡️ Health & Beauty, with about 9.3% of total sales. Watches & Gifts (8.9%) and Bed, Table & Bath (7.7%) follow.
 
-**How long does delivery take?**
-About 12 days on average, with a median of 10.
+**Q4. How many payments are split into installments?**
 
-**How many customers come back to buy again?**
-Only about 3%.
+➡️ About 49%.
+
+**Q5. Does a higher price mean more purchases?**
+
+➡️ Not really. The link is slightly negative (-0.11).
+
+**Q6. How much did sales grow?**
+
+➡️ Sales from January to August 2018 were about 138% higher than the same months in 2017.
+
+**Q7. How long does delivery take?**
+
+➡️ About 12 days on average, with a median of 10.
+
+**Q8. How many customers come back to buy again?**
+
+➡️ Only about 3%.
 
 The notebook covers 12 questions in total, including the top sellers and top customers.
 
